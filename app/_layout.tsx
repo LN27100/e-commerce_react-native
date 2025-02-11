@@ -19,7 +19,7 @@ export default function Layout() {
         headerTitleAlign: "center",
         headerStyle: { backgroundColor: "#80ec91" },
         headerRight: () => (
-          <Pressable onPress={() => router.push("/cart")}>
+          <Pressable onPressIn={() => router.push("/cart")}>
             <View
               style={{
                 flexDirection: "row",

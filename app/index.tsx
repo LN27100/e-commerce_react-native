@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter, Link } from 'expo-router';
 
 type Product = {
   id: number;
@@ -32,6 +32,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
+    
      <FlatList
   data={products}
   keyExtractor={(item) => item.id.toString()}
